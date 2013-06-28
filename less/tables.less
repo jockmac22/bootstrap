@@ -55,6 +55,31 @@ table {
   .table {
     background-color: @bodyBackground;
   }
+  
+  &.data-set {
+    thead {
+        th {
+            #gradient.vertical(#cfe6d6, #b3d5bd);
+            text-align: center;
+        }        
+    } 
+    
+    thead th,
+    td {
+        border-right: 1px solid #EEEEEE;
+        min-width: 80px;
+        white-space: nowrap;
+        
+    }
+   
+    td {
+        text-align: right;    
+    }
+    
+    tfoot td {
+        #gradient.vertical( #b3d5bd, #cfe6d6);
+    }
+  }
 }
 
 
