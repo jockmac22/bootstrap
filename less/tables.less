@@ -76,8 +76,21 @@ table {
         text-align: right;    
     }
     
+    tbody {
+        td.row-total {
+            background: #b3d5bd;
+            font-weight: bold;
+        }
+        
+        tr:hover > td.row-total {
+          background-color: #cfe6d6;
+        }
+        
+    }
+    
     tfoot td {
         #gradient.vertical( #b3d5bd, #cfe6d6);
+        font-weight: bold;
     }
   }
 }
